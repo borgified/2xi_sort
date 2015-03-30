@@ -34,7 +34,6 @@ while(defined(my $line = <$fh>)){
 			$hostname=$1;
 		}
 
-		chomp($line);
 		$farm_content=$farm_content.$line;
 
 	}else{
