@@ -3,7 +3,12 @@
 use warnings;
 use strict;
 
-my $filename = 'a.2xi';
+#my $filename = 'a.2xi';
+my $filename = $ARGV[0];
+if(!defined($ARGV[0])){
+	print "require input .2xi file\n";
+	exit;
+}
 
 open(my $fh, '<', $filename) or die "cant open $filename $!";
 
